@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  text-align: center;
+}
+body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  /* background: #000; */
+  background-image: url("../img/pexels-anna-tis-6341164.jpg");
+  background-size: cover;
+}
+.basic{
+  display: flex;
+  flex-direction:row;
+
+}
+
+/* ========================== */
+.Question{
+font-size:20px;
+}
+.QuestionA{
+  font-size:20px;
+  }
+.Question1{
+  width: 400px;
+  height: 80px;
+  background:rgba(17, 17, 17, 0.897);
+  border: 1px solid blue;
+  border-radius: 5px;
+  color:#a882ee;
+
+}
+.Question1:hover{
+  background:rgba(5, 5, 5, 0.938);
+}
+.Question2:hover{
+  background:rgba(3, 2, 2, 0.938);
+}
+.Question3:hover{
+  background:rgba(3, 2, 2, 0.938);
+}
+.Question4:hover{
+  background:rgba(3, 2, 2, 0.938);
+}
+.Question2{
+  width: 400px;
+  height: 80px;
+  background:rgba(17, 17, 17, 0.897);
+  border: 1px solid blue;
+  border-radius: 5px;
+  color:#a882ee;
+
+}
+.Question3{
+  width: 400px;
+  height: 80px;
+  background:rgba(17, 17, 17, 0.897);
+  border: 1px solid blue;
+  border-radius: 5px;
+  margin-top: 40px;
+  color:#a882ee;
+}
+.Question4{
+  width: 400px;
+  height: 80px;
+  background:rgba(17, 17, 17, 0.897);
+  border: 1px solid blue;
+  border-radius: 5px;
+  margin-top: 40px;
+  color:#a882ee;
+
+}
+.container1{
+  width: 400px;
+  height: 200px;
+  background: rgba(17, 17, 17, 0.589);
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+#btnQuery{
+  width: 200px;
+  height: 40px;
+  /* border: 1px solid blue; */
+  background:rgba(17, 17, 17, 0.897);
+  border-radius: 5px;
+  color: white;
+}
+/* =============== */
+.facebook{
+  margin-left: 40px;
+  margin-top: 10px;
+}
+/* =================== */
+a {
+  position: relative;
+  display: inline-block;
+  padding: 7px 30px;
+  color: #2196f3;
+  background:rgba(3, 2, 2, 0.897);
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 20px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+a:hover{
+color: #255784;
+background:#2196f3;
+box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3 ;
+transition-delay: 1s ;
+}
+a span{
+  position: absolute;
+  display: block;
+}
+a span:nth-child(1){
+  top:0;
+  left:-100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#2196f3);
+}
+a:hover span:nth-child(1){
+  left:100%;
+  transition: 1s;
+}
+a span:nth-child(2){
+  top:-100%;
+  right:0px;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#2196f3);
+}
+a:hover span:nth-child(2){
+  top:100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+a span:nth-child(3){
+  bottom:0;
+  right:-100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,#2196f3);
+}
+a:hover span:nth-child(3){
+  right:100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+a span:nth-child(4)
+{
+  bottom:-100%;
+  left:0px;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#2196f3);
+}
+a:hover span:nth-child(4){
+  bottom:100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+ svg{
+  font-size: 250px;
+  padding-top: 11%;
+}
+.copy{
+  fill: none;
+  stroke: #fff;
+  stroke-width: 3px;
+  stroke-dasharray: 8% 30%;
+  stroke-dashoffset: 0%;
+  animation: textanimation 6s linear infinite;
+}
+@keyframes textanimation{
+  100%{
+    stroke-dashoffset: -35%;
+  }
+}
+.copy1{
+stroke: #673ab7;
+animation-delay: -1s;
+}
+.copy2{
+  stroke: #e91e63;
+  animation-delay: -2s;
+  }
+  .copy3{
+    stroke: #ff5722;
+    animation-delay: -3s;
+    }
+    .copy4{
+      stroke: #f44336;
+      animation-delay: -4s;
+      }
+      .copy5{
+        stroke: #ffc107;
+        animation-delay: -5s;
+        }
+
+
+
+
+@media (min-width: 200px) and (max-width: 990px)
+{
+
+  .container1{
+    width: 310px;
+    height: 150px;
+  }
+  svg{
+    font-size: 200px;
+    padding-top: 11%;
+  }
+  .basic{
+    display:flex;
+    flex-direction: column;
+  }
+  .Question{
+    margin-top:10px;
+  }
+  .QuestionA{
+    margin-top:10px;
+  }
+  .Question1{
+    width: 310px;
+    height: 70px;
+
+  }
+  .Question2{
+    width: 310px;
+    height: 70px;
+
+  }
+  .Question3{
+    width: 310px;
+    margin-top:10px;
+    height: 70px;
+
+  }
+  .Question4{
+    width: 310px;
+    margin-top:10px;
+    height: 70px;
+
+  }
+}
+@media (min-width: 700px) and (max-width: 850px)
+{
+  form .btn{
+   
+    height: 150px;
+    width: 150%;
+    padding: 15px 20px 15px 10px;
+  }
+  
+  .container{
+    position: relative;
+    width: 500px;
+    background: #111;
+    padding: 20px 30px;
+    border: 1px solid rgb(69, 15, 216);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .star-widget label{
+    font-size: 50px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+  }
+
+}
